@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("ello")
+
+        let buttons = document.querySelectorAll("button")
+
+        document.addEventListener('click', function (e) {
+            if (e.target.tagName == "BUTTON") {
+                addToNomiationList(e.target.parentElement)
+            }
+            
+        });
+
+        function addToNomiationList(movie) {
+            console.log(movie)
+            let noms = document.querySelector("#noms")
+
+            // let li = document.createElement("li")
+            
+            // li.innerText = movie
+            noms.appendChild(movie)
+
+
+
+        }
+        
+    </script>
+</head>
+<body>
+
+    <h2>Results</h2>
+
+    <ul>
+        <li>Mulan - 2020 - <button>Nominate</button></li>
+        <li>Knives Out - 2019 - <button>Nominate</button></li>
+        <li>Inception - 2010 - <button>Nominate</button></li>
+        <li>Intersteller - 2014 - <button>Nominate</button></li>
+        <li>Star Trek: The Motion Picture - 1982 - <button>Nominate</button></li>
+    </ul>
+
+    <h2>Nominations</h2>
+
+    <ul id="noms">
+
+        </ul>
+    
+</body>
+</html>
