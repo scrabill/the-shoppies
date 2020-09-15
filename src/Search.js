@@ -86,26 +86,34 @@ handleNomination(e) {
       }
 
       return (
-        <div>
+        <main>
           <h2>Search</h2>
 
+          <aside id="search">
           <form>
               <input type="text" placeholder="Search for a movie by it's title" id="input" name="input"/>
               <input type="submit" onClick={(e) => this.handleOnClick(e) } />
           </form>
+          </aside>
 
-          {resultsHeadline}
+          <section id="results">
+            {resultsHeadline}
 
-            <ul>
-             {this.state.results.map(movie => <Movie nomineeIDs={this.state.nomineeIDs} key={movie.imdbID} movie={movie} onClick={(e) => this.handleNomination(e)} text={"Nominate"} /> )}
-            </ul>
+              <ul>
+              {this.state.results.map(movie => <Movie nomineeIDs={this.state.nomineeIDs} key={movie.imdbID} movie={movie} onClick={(e) => this.handleNomination(e)} text={"Nominate"} /> )}
+              </ul>
+          </section>
 
-          <h2>Nominations</h2>
+            <section id="nominations">
+              <h2>Nominations</h2>
 
-          <ul id="noms">
-            {this.state.nominees.map(movie => <Movie nomineeIDs={this.state.nomineeIDs} key={movie.imdbID} movie={movie} onClick={(e) => this.removeNomination(e)} text={"X"} />)}
-          </ul>
-        </div>
+              <ul id="noms">
+                {this.state.nominees.map(movie => <Movie nomineeIDs={this.state.nomineeIDs} key={movie.imdbID} movie={movie} onClick={(e) => this.removeNomination(e)} text={"X"} />)}
+              </ul>
+            </section>
+
+
+        </main>
       );
     }
 
