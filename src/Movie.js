@@ -2,15 +2,6 @@ import React from 'react'
 
 export default class Movie extends React.Component {
 
-    // handleOnClick(e) {
-    //     e.preventDefault();
-    //     let id = e.target.id
-    //     this.setState(prevState => ({
-    //         nominees: [...prevState.nominees, id]
-    //       }))
-      
-    // }
-
     render() {
 
         let disabled = ""
