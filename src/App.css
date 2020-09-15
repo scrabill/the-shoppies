@@ -1,38 +1,72 @@
-.App {
+/* :root {
+  --primary: #1C2833;
+  --secondary: IVORY;
+} */
+
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --accent: darkred;
+  --border-radius: 
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="submit"] {
+  height: 3em;
+  border: 1px solid darkgrey;
+  border-radius: var(--border-radius);
+}
+
+input[type="submit"] {
+  width: 80%;
+  margin-top: 1em;
+}
+
+button {
+  min-height: 40px;
+}
+
+input#input {
+  width: 80%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2 {
+  color:#111111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+@media SCREEN and (min-width: 600px) {
+  input#input {
+    width: 50%;
+    text-align: center;
+    xpadding: 0 20px;
+    margin: 0 20px 0 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  input[type="submit"] {
+    width: 20%;
   }
 }
