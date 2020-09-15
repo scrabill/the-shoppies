@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>The Spoonies</h1>
-        <p>Nominate up to 5 of your favorite movies for consideration for this year's Spoonie awards</p>
+        <h1>The Shoppies</h1>
+        <p>Nominate up to 5 of your favorite movies for consideration for this year's Shoppie awards</p>
         <Search />
       </header>
     </div>
