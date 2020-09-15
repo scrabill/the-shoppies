@@ -4,7 +4,7 @@ A (mock) movie award nomination app. Select up to 5 movies to nominate for this 
 
 # Instructions
 
-The Shoppies can be viewed online at [gifted-euler-ba87c6.netlify.app](http://www.gifted-euler-ba87c6.netlify.app)
+The Shoppies can be viewed online at [gifted-euler-ba87c6.netlify.app](https://gifted-euler-ba87c6.netlify.app)
 
 Or, to download the app locally
 
